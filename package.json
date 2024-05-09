@@ -14,6 +14,7 @@
     "@astrojs/solid-js": "^4.2.0",
     "@astrojs/tailwind": "^5.1.0",
     "astro": "^4.8.1",
+    "nats.ws": "^1.25.0",
     "solid-js": "^1.8.17",
     "tailwindcss": "^3.4.3",
     "typescript": "^5.4.5"

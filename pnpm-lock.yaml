@@ -20,6 +20,9 @@ importers:
       astro:
         specifier: ^4.8.1
         version: 4.8.1(typescript@5.4.5)
+      nats.ws:
+        specifier: ^1.25.0
+        version: 1.25.0
       solid-js:
         specifier: ^1.8.17
         version: 1.8.17
@@ -1611,6 +1614,13 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
+  nats.ws@1.25.0:
+    resolution: {integrity: sha512-Ut4hmRhbc2MqV558O6ymg2y0jPSlBDFk0VJSNh5ijrHFTwTX4In6IuJOPmOwQyNMrLjhs7wTTi0zVOWPgu8ApA==}
+
+  nkeys.js@1.1.0:
+    resolution: {integrity: sha512-tB/a0shZL5UZWSwsoeyqfTszONTt4k2YS0tuQioMOD180+MbombYVgzDUYHlx+gejYK6rgf08n/2Df99WY0Sxg==}
+    engines: {node: '>=10.0.0'}
+
   nlcst-to-string@3.1.1:
     resolution: {integrity: sha512-63mVyqaqt0cmn2VcI2aH6kxe1rLAmSROqHMA0i4qqg1tidkfExgpb0FGMikMCn86mw5dFtBtEANfmSSK7TjNHw==}
 
@@ -2048,6 +2058,9 @@ packages:
 
   tslib@2.6.2:
     resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
+
+  tweetnacl@1.0.3:
+    resolution: {integrity: sha512-6rt+RN7aOi1nGMyC4Xa5DdYiukl2UWCbcJft7YhxReBGQD7OAM8Pbxw6YMo4r2diNEA8FEmu32YOn9rhaiE5yw==}
 
   type-fest@2.19.0:
     resolution: {integrity: sha512-RAH822pAdBgcNMAfWnCBU3CFZcfZ/i1eZjwFU/dsLKumyuuP3niueg2UAukXYF0E2AAoc82ZSSf9J0WQBinzHA==}
@@ -4099,6 +4112,15 @@ snapshots:
 
   nanoid@3.3.7: {}
 
+  nats.ws@1.25.0:
+    optionalDependencies:
+      nkeys.js: 1.1.0
+
+  nkeys.js@1.1.0:
+    dependencies:
+      tweetnacl: 1.0.3
+    optional: true
+
   nlcst-to-string@3.1.1:
     dependencies:
       '@types/nlcst': 1.0.4
@@ -4612,6 +4634,9 @@ snapshots:
       typescript: 5.4.5
 
   tslib@2.6.2:
+    optional: true
+
+  tweetnacl@1.0.3:
     optional: true
 
   type-fest@2.19.0: {}
