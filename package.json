@@ -13,6 +13,7 @@
     "@astrojs/check": "^0.6.0",
     "@astrojs/solid-js": "^4.2.0",
     "@astrojs/tailwind": "^5.1.0",
+    "@paralleldrive/cuid2": "^2.2.2",
     "astro": "^4.8.1",
     "nats.ws": "^1.25.0",
     "solid-js": "^1.8.17",
